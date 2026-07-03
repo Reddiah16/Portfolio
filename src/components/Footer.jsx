@@ -65,7 +65,7 @@ const Footer = () => {
         }}
       />
 
-      <div className="max-w-4xl w-full px-6 pb-16 flex flex-col items-center text-center gap-10">
+      <div className="max-w-4xl w-full px-6 pb-12 md:pb-16 flex flex-col items-center text-center gap-12 md:gap-14">
         
         {/* Brand Name - Elegant Title Case with Gradient */}
         <h2 className="text-[9vw] md:text-[6.5vw] leading-none font-sans font-black tracking-tighter select-none text-transparent bg-clip-text bg-gradient-to-b from-[#ffffff] via-[#f4f4f4] to-[#d4d4d4] hover:from-[#ff2a2a] hover:to-[#b91c1c] transition-all duration-500">
@@ -78,7 +78,7 @@ const Footer = () => {
         </p>
 
         {/* Nav links */}
-        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[10px] md:text-xs font-bold uppercase tracking-widest">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-[10px] md:text-xs font-bold uppercase tracking-widest">
           <a href="#" className="hover:text-white transition-colors">Home</a>
           <span className="text-white/10 select-none">|</span>
           <a href="#about" className="hover:text-white transition-colors">About</a>

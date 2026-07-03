@@ -62,7 +62,7 @@ const Navbar = () => {
         </div>
 
         {/* Center: Desktop Menu Links */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex items-center gap-8 lg:gap-12">
           {navLinks.map((link) => (
             <a 
               key={link} 
@@ -81,7 +81,7 @@ const Navbar = () => {
           <a 
             href="#contact"
             onClick={handleHireMeClick}
-            className="px-6 py-2.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 backdrop-blur-md cursor-pointer"
+            className="px-6 py-3 rounded-full bg-white/10 border border-white/20 text-white text-sm font-semibold hover:bg-white hover:text-black hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 backdrop-blur-md cursor-pointer flex items-center justify-center min-h-[44px]"
           >
             Hire Me
           </a>
@@ -91,7 +91,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center">
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="text-white focus:outline-none focus:ring-2 focus:ring-white/50 rounded p-2"
+            className="text-white focus:outline-none focus:ring-2 focus:ring-white/50 rounded-lg p-3 -mr-3"
             aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
@@ -122,7 +122,7 @@ const Navbar = () => {
               key={link} 
               href={`#${link.toLowerCase()}`}
               onClick={() => setIsOpen(false)}
-              className="text-white hover:text-black font-bold text-lg border-b border-white/20 pb-2 transition-colors"
+              className="text-white hover:text-black font-bold text-lg border-b border-white/20 py-3 transition-colors block"
             >
               {link}
             </a>
@@ -131,7 +131,7 @@ const Navbar = () => {
              <a 
                href="#contact"
                onClick={handleHireMeClick} 
-               className="inline-block px-6 py-3 rounded-full bg-white text-[#ff2a2a] font-black hover:bg-black hover:text-white transition-colors w-full text-center shadow-lg cursor-pointer"
+               className="flex items-center justify-center px-6 py-4 rounded-full bg-white text-[#ff2a2a] font-black hover:bg-black hover:text-white transition-colors w-full text-center shadow-lg cursor-pointer min-h-[48px]"
              >
                Hire Me
              </a>

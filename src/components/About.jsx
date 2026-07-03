@@ -47,8 +47,8 @@ const LangChainIcon = () => (
 
 const About = () => {
   return (
-    <section id="about" className="bg-[#ff2a2a] pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-start">
+    <section id="about" className="bg-[#ff2a2a] py-24 md:py-32 lg:py-40 px-6 md:px-12 w-full relative overflow-hidden font-sans">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 md:gap-16 items-start">
         
         {/* Left Side: ID Badge and Skills */}
         <div className="flex flex-col items-center w-full md:w-[350px] shrink-0 mt-12 md:mt-0">
@@ -85,9 +85,9 @@ const About = () => {
         {/* Right Side: Info Content */}
         <div data-aos="fade-left" data-aos-delay="200" className="flex-1 text-white mt-8 md:mt-0 relative z-20 w-full">
           
-          <h2 className="text-4xl md:text-5xl font-black text-black mb-6 tracking-tight uppercase">{aboutContent.heading}</h2>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6 md:mb-8 tracking-tight uppercase leading-[1.1]">{aboutContent.heading}</h2>
           <p 
-            className="text-base md:text-lg font-medium mb-12 leading-relaxed max-w-3xl text-red-50/95"
+            className="text-base md:text-lg font-medium mb-12 leading-relaxed max-w-3xl text-white/90"
             dangerouslySetInnerHTML={{ __html: aboutContent.bio }}
           />
 

@@ -197,7 +197,7 @@ const Hero = () => {
             <h1
               data-aos="fade-up"
               data-aos-delay="100"
-              className="text-white text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.4rem] font-black mb-5 md:mb-7 tracking-tight uppercase leading-[1.05] select-none text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/70"
+              className="text-white text-5xl md:text-6xl lg:text-[5.5rem] font-black mb-4 md:mb-6 tracking-tighter uppercase leading-[1.05] select-none text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/70"
             >
               Macha Reddaiah
             </h1>
@@ -206,7 +206,7 @@ const Hero = () => {
             <h2
               data-aos="fade-up"
               data-aos-delay="200"
-              className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-5 md:mb-7 min-h-[36px] sm:min-h-[44px] md:min-h-[52px] lg:min-h-[60px] leading-tight text-white flex items-center"
+              className="text-lg md:text-2xl lg:text-3xl font-bold tracking-tight mb-6 md:mb-8 min-h-[36px] sm:min-h-[44px] md:min-h-[52px] leading-tight text-white flex items-center"
             >
               <span className="text-transparent [-webkit-text-stroke:1px_white] hover:text-[#ff2a2a] transition-colors duration-500 cursor-default">
                 {currentText}
@@ -218,7 +218,7 @@ const Hero = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="300"
-              className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-medium mb-8 md:mb-10 lg:mb-12 max-w-2xl text-white/70 leading-relaxed drop-shadow-md"
+              className="text-white/70 text-base md:text-lg font-medium mb-8 md:mb-12 max-w-2xl leading-relaxed drop-shadow-md"
             >
               Building production-ready AI applications using LangGraph, FastAPI, PostgreSQL, Retrieval-Augmented Generation (RAG), and modern Large Language Models.
             </p>
@@ -231,14 +231,14 @@ const Hero = () => {
             >
               <a
                 href={heroContent.ctaPrimary.href}
-                className="px-8 py-3.5 text-sm md:text-base rounded-full bg-white text-black font-bold hover:bg-gray-200 transition-all duration-300 transform hover:scale-[1.03] shadow-[0_4px_20px_rgba(255,255,255,0.15)] min-h-[48px] flex items-center justify-center"
+                className="px-8 py-4 text-base rounded-full bg-white text-black font-bold hover:bg-gray-200 transition-all duration-300 transform hover:scale-[1.03] shadow-[0_4px_20px_rgba(255,255,255,0.15)] flex items-center justify-center"
               >
                 {heroContent.ctaPrimary.text}
               </a>
 
               <a
                 href={heroContent.ctaSecondary.href}
-                className="px-8 py-3.5 text-sm md:text-base rounded-full bg-black/40 border border-white/20 text-white font-bold hover:bg-black/60 hover:border-white/40 transition-all duration-300 backdrop-blur-md min-h-[48px] flex items-center justify-center"
+                className="px-8 py-4 text-base rounded-full bg-black/40 border border-white/20 text-white font-bold hover:bg-black/60 hover:border-white/40 transition-all duration-300 backdrop-blur-md flex items-center justify-center"
               >
                 {heroContent.ctaSecondary.text}
               </a>
@@ -246,7 +246,7 @@ const Hero = () => {
               <a
                 href={heroContent.ctaResume.href}
                 download
-                className="px-8 py-3.5 text-sm md:text-base rounded-full bg-transparent border border-white/30 text-white font-semibold hover:bg-white hover:text-black hover:border-white transition-all duration-300 backdrop-blur-md flex items-center gap-2.5 min-h-[48px] justify-center"
+                className="px-8 py-4 text-base rounded-full bg-transparent border border-white/30 text-white font-semibold hover:bg-white hover:text-black hover:border-white transition-all duration-300 backdrop-blur-md flex items-center gap-2.5 justify-center"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

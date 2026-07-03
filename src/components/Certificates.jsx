@@ -18,7 +18,7 @@ const CertificateCard = ({ cert, aosDelay, onPreview }) => {
       data-aos="zoom-in"
       data-aos-delay={aosDelay}
       onClick={() => onPreview(cert)}
-      className="bg-black/40 backdrop-blur-sm rounded-3xl p-6 border border-white/10 hover:border-[#ff2a2a]/30 hover:bg-black/60 hover:scale-[1.03] hover:shadow-[0_20px_45px_rgba(255,42,42,0.08)] transition-all duration-500 cursor-pointer group flex flex-col justify-between h-full relative"
+      className="bg-black/40 backdrop-blur-sm rounded-3xl p-8 md:p-10 border border-white/10 hover:border-[#ff2a2a]/30 hover:bg-black/60 hover:scale-[1.03] hover:shadow-[0_20px_45px_rgba(255,42,42,0.08)] transition-all duration-500 cursor-pointer group flex flex-col justify-between h-full relative"
     >
       {/* Visual Certificate Document Thumbnail */}
       <div 
@@ -118,7 +118,7 @@ const Certificates = () => {
   }, [selectedCert]);
 
   return (
-    <section id="certificates" className="bg-[#ff2a2a] pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans">
+    <section id="certificates" className="bg-[#ff2a2a] py-24 md:py-32 lg:py-40 px-6 md:px-12 w-full relative overflow-hidden font-sans">
       
       {/* Torn paper divider at top (transition from dark Projects/GithubStats section) */}
       <div className="absolute top-0 left-0 w-full pointer-events-none z-10 transform -translate-y-[1px] rotate-180">
@@ -133,10 +133,10 @@ const Certificates = () => {
           <div className="inline-block border border-black/25 rounded-full px-5 py-1.5 text-sm text-black/70 font-bold mb-6 bg-white/10 backdrop-blur-sm shadow-sm select-none">
             Credentials
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight uppercase">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-black mb-6 md:mb-8 tracking-tight uppercase leading-[1.1]">
             Certifications
           </h2>
-          <p className="text-red-100 text-base md:text-lg font-semibold max-w-lg mx-auto">
+          <p className="text-white/90 text-base md:text-lg font-medium max-w-lg mx-auto leading-relaxed">
             Industry-recognized credentials that validate my machine learning, database, and Python capabilities.
           </p>
         </div>

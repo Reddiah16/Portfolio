@@ -5,7 +5,7 @@ const SoftSkillCard = ({ skill, index }) => (
   <div 
     data-aos="fade-up"
     data-aos-delay={index * 100}
-    className="bg-[#f8f8f8] border border-gray-200 rounded-3xl p-6 hover:scale-[1.03] hover:bg-white hover:border-[#ff2a2a]/30 hover:shadow-[0_20px_45px_rgba(255,42,42,0.08)] transition-all duration-500 group flex flex-col items-center text-center justify-between h-full min-h-[220px]"
+    className="bg-[#f8f8f8] border border-gray-200 rounded-3xl p-8 md:p-10 hover:scale-[1.03] hover:bg-white hover:border-[#ff2a2a]/30 hover:shadow-[0_20px_45px_rgba(255,42,42,0.08)] transition-all duration-500 group flex flex-col items-center text-center justify-between h-full min-h-[220px]"
   >
     <div className="flex flex-col items-center">
       <div className="text-4xl mb-4 p-3 bg-gray-100 rounded-2xl group-hover:bg-[#ff2a2a]/10 group-hover:scale-110 transition-all duration-300">
@@ -23,7 +23,7 @@ const SoftSkillCard = ({ skill, index }) => (
 
 const SoftSkills = () => {
   return (
-    <section id="soft-skills" className="bg-white pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#80808006_1px,transparent_1px),linear-gradient(to_bottom,#80808006_1px,transparent_1px)] bg-[size:60px_60px]">
+    <section id="soft-skills" className="bg-white py-24 md:py-32 lg:py-40 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#80808006_1px,transparent_1px),linear-gradient(to_bottom,#80808006_1px,transparent_1px)] bg-[size:60px_60px]">
       
       {/* Top paper divider (torn SVG transition from red Certificates section) */}
       <div className="absolute top-0 left-0 w-full pointer-events-none z-10 transform -translate-y-[1px] rotate-180">
@@ -39,10 +39,10 @@ const SoftSkills = () => {
           <div className="inline-block border border-gray-300 rounded-full px-5 py-1.5 text-sm text-gray-600 font-bold mb-6 shadow-sm bg-white">
             Core Competencies
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight mb-4 uppercase">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight mb-6 md:mb-8 uppercase leading-[1.1]">
             Professional Soft Skills
           </h2>
-          <p className="text-gray-500 text-base md:text-lg max-w-lg mx-auto leading-relaxed">
+          <p className="text-gray-600 text-base md:text-lg font-medium max-w-lg mx-auto leading-relaxed">
             Essential traits that make me an effective engineer, coordinator, and communicator.
           </p>
         </div>

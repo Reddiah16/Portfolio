@@ -5,7 +5,7 @@ const CreatorCard = ({ category, index }) => (
   <div 
     data-aos="fade-up"
     data-aos-delay={index * 100}
-    className="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 hover:scale-[1.02] hover:border-red-500/30 hover:shadow-[0_20px_50px_rgba(255,42,42,0.15)] transition-all duration-500 group flex flex-col justify-between"
+    className="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-10 hover:scale-[1.02] hover:border-red-500/30 hover:shadow-[0_20px_50px_rgba(255,42,42,0.15)] transition-all duration-500 group flex flex-col justify-between"
   >
     <div>
       <div className="flex justify-between items-start mb-6">
@@ -35,7 +35,7 @@ const CreatorCard = ({ category, index }) => (
 
 const ContentCreator = () => {
   return (
-    <section id="creator" className="bg-[#0a0a0a] pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:80px_80px]">
+    <section id="creator" className="bg-[#0a0a0a] py-24 md:py-32 lg:py-40 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:80px_80px]">
       
       {/* Visual background lights */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-red-600/5 rounded-full blur-[160px] pointer-events-none" />
@@ -47,10 +47,10 @@ const ContentCreator = () => {
           <div className="inline-block border border-white/20 rounded-full px-5 py-1.5 text-sm text-white/60 font-bold mb-6 shadow-sm bg-white/5 backdrop-blur-sm">
             {contentCreation.badge}
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 md:mb-8 tracking-tight leading-[1.1]">
             {contentCreation.heading}
           </h2>
-          <p className="text-white/50 text-base md:text-lg max-w-xl font-medium leading-relaxed">
+          <p className="text-white/70 text-base md:text-lg max-w-xl font-medium leading-relaxed">
             {contentCreation.description}
           </p>
         </div>

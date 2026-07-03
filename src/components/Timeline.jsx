@@ -58,7 +58,7 @@ const CardContent = ({ item, index, side }) => {
       className={`tl-card-animate ${side === 'left' ? 'tl-from-left' : 'tl-from-right'} w-full max-w-md`}
       style={{ transitionDelay: `${index * 100 + 80}ms` }}
     >
-      <div className="group relative bg-white/[0.04] backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-7 hover:bg-white/[0.07] hover:border-red-500/30 hover:shadow-[0_8px_40px_rgba(255,42,42,0.12)] transition-all duration-500 cursor-default">
+      <div className="group relative bg-white/[0.04] backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 hover:bg-white/[0.07] hover:border-red-500/30 hover:shadow-[0_8px_40px_rgba(255,42,42,0.12)] transition-all duration-500 cursor-default">
         {/* Red top accent line */}
         <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-red-500/50 to-transparent rounded-full" />
 
@@ -209,7 +209,7 @@ const Timeline = () => {
   return (
     <section
       id="timeline"
-      className="relative bg-[#0a0a0a] pt-28 pb-36 px-6 md:px-12 w-full overflow-hidden font-sans"
+      className="relative bg-[#0a0a0a] py-24 md:py-32 lg:py-40 px-6 md:px-12 w-full overflow-hidden font-sans"
     >
       {/* Dot-grid texture */}
       <div
@@ -229,10 +229,10 @@ const Timeline = () => {
           <span className="inline-block text-[11px] font-black tracking-[0.25em] uppercase text-red-400 bg-red-500/10 border border-red-500/20 px-4 py-1.5 rounded-full mb-5">
             Journey
           </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight mb-4">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight mb-6 md:mb-8 leading-[1.1]">
             Education &amp; Experience
           </h2>
-          <p className="text-white/50 text-base md:text-lg font-medium max-w-xl mx-auto leading-relaxed">
+          <p className="text-white/70 text-base md:text-lg font-medium max-w-xl mx-auto leading-relaxed">
             The milestones that shaped my engineering path — from classrooms to production AI systems.
           </p>
         </div>

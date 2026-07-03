@@ -151,7 +151,7 @@ const Contact = () => {
   };
 
   return (
-    <section ref={ref} id="contact" className="bg-[#0a0a0a] w-full min-h-screen relative overflow-hidden flex items-center justify-center py-24 px-4 md:px-12 border-t border-gray-900">
+    <section ref={ref} id="contact" className="bg-[#0a0a0a] w-full min-h-screen relative overflow-hidden flex items-center justify-center py-24 md:py-32 lg:py-40 px-4 md:px-12 border-t border-gray-900">
       {/* Huge Background Text */}
       <motion.div 
         style={{ y }}
@@ -176,7 +176,7 @@ const Contact = () => {
             <div className="text-xs font-bold tracking-[0.2em] uppercase opacity-80 mb-2">
               Reach Me
             </div>
-            <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-tight">
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-[1.1]">
               Let's Build Something Great
             </h2>
           </div>

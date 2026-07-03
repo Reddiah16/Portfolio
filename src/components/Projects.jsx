@@ -352,7 +352,7 @@ const ProjectCard = ({ project, aosDelay }) => {
                     href={project.links.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-white/10 border border-white/20 text-white text-sm font-semibold hover:bg-white hover:text-black transition-all duration-300 shadow-sm"
+                    className="flex items-center gap-2.5 px-6 py-3 rounded-full bg-white/10 border border-white/20 text-white text-sm font-semibold hover:bg-white hover:text-black transition-all duration-300 shadow-sm"
                   >
                     <GitHubIcon /> GitHub Repository
                   </a>
@@ -364,7 +364,7 @@ const ProjectCard = ({ project, aosDelay }) => {
                     href={project.links.demo || '#'}
                     target={project.links.demo ? "_blank" : undefined}
                     rel={project.links.demo ? "noopener noreferrer" : undefined}
-                    className={`flex items-center gap-2.5 px-6 py-3.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-sm ${
+                    className={`flex items-center gap-2.5 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 shadow-sm ${
                       project.links.demo
                         ? 'bg-[#ff2a2a] text-white hover:bg-red-600 hover:shadow-[0_0_20px_rgba(255,42,42,0.4)]'
                         : 'bg-white/5 text-white/40 border border-white/10 cursor-not-allowed'
@@ -378,7 +378,7 @@ const ProjectCard = ({ project, aosDelay }) => {
                 {/* View Details */}
                 <button
                   onClick={() => setShowModal(true)}
-                  className="flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-transparent border border-white/15 text-white/60 text-sm font-semibold hover:border-[#ff2a2a]/50 hover:text-[#ff2a2a] hover:bg-[#ff2a2a]/8 transition-all duration-300"
+                  className="flex items-center gap-2.5 px-6 py-3 rounded-full bg-transparent border border-white/15 text-white/60 text-sm font-semibold hover:border-[#ff2a2a]/50 hover:text-[#ff2a2a] hover:bg-[#ff2a2a]/8 transition-all duration-300"
                 >
                   <EyeIcon /> View Details
                 </button>
@@ -456,7 +456,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-[#0a0a0a] pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:80px_80px]"
+      className="bg-[#0a0a0a] py-24 md:py-32 lg:py-40 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:80px_80px]"
     >
       <div className="max-w-6xl mx-auto">
 
@@ -468,7 +468,7 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-6 tracking-tight">
             Work that speaks <br className="hidden md:block" />for itself
           </h2>
-          <p className="text-white/50 text-base md:text-lg max-w-lg font-medium leading-relaxed">
+          <p className="text-white/70 text-base md:text-lg max-w-lg font-medium leading-relaxed">
             A selection of projects that showcase my expertise in Generative AI systems, LangGraph agent workflows, and backend systems development.
           </p>
         </div>
