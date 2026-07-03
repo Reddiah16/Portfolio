@@ -1,0 +1,11 @@
+# robots.txt — Macha Reddaiah Portfolio
+# Allow all crawlers, disallow nothing
+
+User-agent: *
+Allow: /
+
+# Primary sitemap
+Sitemap: https://macha-reddaiah.dev/sitemap.xml
+
+# Common crawler-friendly hints
+Crawl-delay: 1

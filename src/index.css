@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-fade-in: fadeIn 0.25s ease-out forwards;
+  --animate-scale-up: scaleUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes scaleUp {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+}
+
+/* Force font-display: swap for Google Fonts to prevent FOIT */
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-display: swap;
+}
+
+/* Accessible focus ring for keyboard navigation */
+:focus-visible {
+  outline: 2px solid #ff2a2a;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ─── Scroll-padding: stop anchor links hiding under fixed navbar ─── */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* matches navbar height */
+}
+
+/* ─── Reduced-motion: respect user OS preference ─────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Keep AOS elements visible so content isn't hidden */
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .tl-card-animate,
+  .tl-dot {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 5px;
+  border: 2px solid #0a0a0a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2a2a;
+}
+
+[data-aos="drop-bounce"] {
+  opacity: 0;
+}
+[data-aos="drop-bounce"].aos-animate {
+  animation: dropBounce 1.2s cubic-bezier(0.28, 0.84, 0.42, 1) forwards;
+}
+
+@keyframes dropBounce {
+  0% { transform: translateY(-300px); opacity: 0; }
+  50% { transform: translateY(0); opacity: 1; }
+  65% { transform: translateY(-40px); opacity: 1; }
+  80% { transform: translateY(0); opacity: 1; }
+  90% { transform: translateY(-15px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Custom CSS for Interactive Mockups */
+@keyframes scan {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(238px); }
+}
+.animate-scan {
+  animation: scan 3s linear infinite;
+}
+
+@keyframes pulse-travel-x {
+  0% { left: 0%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+.animate-pulse-travel-x {
+  animation: pulse-travel-x 2.5s infinite linear;
+}
+
+/* ─── Timeline scroll animations ──────────────────────────────────────────── */
+
+/* Cards slide in from left / right */
+.tl-card-animate {
+  opacity: 0;
+  transform: translateX(0) translateY(24px);
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.tl-from-left {
+  transform: translateX(-48px) translateY(0);
+}
+.tl-from-right {
+  transform: translateX(48px) translateY(0);
+}
+.tl-card-visible {
+  opacity: 1 !important;
+  transform: translateX(0) translateY(0) !important;
+}
+
+/* Dots pop in */
+.tl-dot {
+  opacity: 0;
+  transform: scale(0.4);
+  transition: opacity 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+              transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  will-change: opacity, transform;
+}
+.tl-dot-visible {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+/* ─── Hero → About transition particle float ───────────────────────── */
+@keyframes heroParticleFloat {
+  0%   { transform: translateY(0px) scale(1); opacity: 0.15; }
+  50%  { transform: translateY(-10px) scale(1.3); opacity: 0.5; }
+  100% { transform: translateY(-4px) scale(0.85); opacity: 0.2; }
+}
+
+@keyframes contactHighlight {
+  0% {
+    box-shadow: 0 30px 60px -15px rgba(255, 42, 42, 0.35), 0 0 0 0px rgba(255, 255, 255, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 30px 60px -15px rgba(255, 42, 42, 0.35), 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 30px 10px rgba(255, 255, 255, 0.45);
+    transform: scale(1.01);
+  }
+  100% {
+    box-shadow: 0 30px 60px -15px rgba(255, 42, 42, 0.35), 0 0 0 0px rgba(255, 255, 255, 0);
+    transform: scale(1);
+  }
+}
+
+.contact-highlight-pulse {
+  animation: contactHighlight 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
